@@ -228,20 +228,20 @@
       出演・演奏のご依頼、声楽レッスン、その他のお問い合わせはこちらからお願いいたします。
     </p>
 
-    <form class="contact-form" action="mailto:umezawana@icloud.com" method="post" enctype="text/plain">
+    <form class="contact-form" action="https://formspree.io/f/mnpnrwlo" method="POST">
       <div class="form-group">
         <label for="name">お名前 <span>必須</span></label>
-        <input id="name" name="お名前" type="text" required>
+        <input id="name" name="name" type="text" required>
       </div>
 
       <div class="form-group">
         <label for="email">メールアドレス <span>必須</span></label>
-        <input id="email" name="メールアドレス" type="email" required>
+        <input id="email" name="email" type="email" required>
       </div>
 
       <div class="form-group">
         <label for="category">お問い合わせ内容</label>
-        <select id="category" name="お問い合わせ内容">
+        <select id="category" name="category">
           <option value="出演・演奏依頼">出演・演奏依頼</option>
           <option value="声楽レッスン">声楽レッスン</option>
           <option value="その他">その他</option>
@@ -250,9 +250,10 @@
 
       <div class="form-group">
         <label for="message">メッセージ <span>必須</span></label>
-        <textarea id="message" name="メッセージ" rows="7" required></textarea>
+        <textarea id="message" name="message" rows="7" required></textarea>
       </div>
 
+      <input type="hidden" name="_subject" value="梅澤奈穂 公式ホームページからのお問い合わせ">
       <button type="submit" class="contact-submit">送信する</button>
     </form>
 
